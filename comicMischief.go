@@ -21,7 +21,8 @@ func main() {
 
 
   fmt.Println("Comic:", title, "was written by", writer, "drawn by", artist)
-  fmt.Println("Is published in", year, "by", publisher, "and have", pageNumber, "pages.", "Our grade:", grade)
+  fmt.Println("Is published in", year, "by", publisher, "and have", pageNumber,
+     "pages.", "Our grade:", grade)
   fmt.Println("My rating:", shantRate)
 
   fmt.Println()
@@ -38,6 +39,7 @@ func main() {
   shantRate = float32(time.Now().Year() - 1997) * grade
 
   fmt.Println("Comic:", title, "was written by", writer, "drawn by", artist)
-  fmt.Println("Is published in", year, "by", publisher, "and have", pageNumber, "pages.", "Our grade:", grade)
+  fmt.Println("Is published in", year, "by", publisher, "and have", pageNumber,
+    "pages.", "Our grade:", grade)
   fmt.Println("My rating:", shantRate)
 }
