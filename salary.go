@@ -8,5 +8,5 @@ func main () {
   var netto float
   netto := salary * 0.87
 
-  fmt.Println("Your salary netto is ", netto)
+  fmt.Println("Your salary netto is", netto)
 }
