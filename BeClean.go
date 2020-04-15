@@ -25,7 +25,7 @@ func main () {
   cleanReg = 2
   sanAvailable = float32(famSize * sanPerDay * cleanReg)
 
-  if sanNeeded < sanAvailable {
+  if sanNeeded <= sanAvailable {
       fmt.Println("House can be cleaned")
     } else {
       fmt.Println("House can't be cleaned")
