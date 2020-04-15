@@ -4,9 +4,10 @@ import "fmt"
 
 func main () {
   fmt.Println("Put your's salary gross")
-  var salary := scan()
-  var netto float
-  netto := salary * 0.87
+  var salary int
+  fmt.Scan(&salary)
+  netto := float32(salary) * 0.87
 
-  fmt.Println("Your salary netto is", netto)
+  fmt.Printf("Your salary netto is %.2f", netto)
+  fmt.Println("")
 }
