@@ -40,12 +40,17 @@ func flyToPlanet(planet string, fuel int) int {
   fuelRemaining = fuel
   fuelCost = calculateFuel(planet)
 
-  if fuelRemaining >= fuelCost {
+  if fuel != 0 {
+    if fuelRemaining >= fuelCost {
     greetPlanet(planet)
     fuelRemaining = fuelRemaining - fuelCost
-  } else {
+    } else {
     cantFly()
-  }
+    }
+  } else {
+      fmt.Println("Select again")
+    }
+
   return fuelRemaining
 }
 
@@ -74,13 +79,18 @@ func main() {
   fmt.Println("Hello Space Traveller! How much fuel you have?")
   var fuel int
   fmt.Scan(&fuel)
-  checkFuel(fuel)
+
+  if fuel == 0 {
+    fmt.Println("Try adding more fuel")
+    fmt.Scan(&fuel)
+  }
 
   var planetChoice string
-  fmt.Scan(&planetChoice)
+
   for fuel > 300000 {
-    fuel = flyToPlanet(planetChoice, fuel)
     checkFuel(fuel)
+    fmt.Scan(&planetChoice)
+    fuel = flyToPlanet(planetChoice, fuel)
     fuelGauge(fuel)
   }
     cantFly()
