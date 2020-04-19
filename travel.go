@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+const venusFuel int = 300000
+const mercuryFuel int = 500000
+const marsFuel int = 700000
+
 // Create the function fuelGauge() here
 func fuelGauge(fuel int) {
   fmt.Println("You still have", fuel, "gallons")
@@ -12,11 +16,11 @@ func calculateFuel(planet string) int {
   var fuel int
   switch planet {
   case "Venus":
-    fuel = 300000
+    fuel = venusFuel
   case "Mercury":
-    fuel = 500000
+    fuel = mercuryFuel
   case "Mars":
-    fuel = 700000
+    fuel = marsFuel
   default:
     fmt.Println("We can't go here, no fuel used")
     fuel = 0
@@ -59,13 +63,13 @@ func dest() {
 }
 
 func checkFuel(fuel int) int {
-  if fuel >= 700000 {
+  if fuel >= marsFuel {
     fmt.Println("We can go to Venus, Mercury or Mars")
     dest()
-  } else if fuel >= 500000 {
+  } else if fuel >= mercuryFuel {
     fmt.Println("We can go to Venus or Mercury")
     dest()
-  } else if fuel >= 300000 {
+  } else if fuel >= venusFuel {
     fmt.Println("We can go to Venus")
     dest()
   } else {
