@@ -1,4 +1,17 @@
 # Learn Go
 
 Привет!
-Это мой репозиторий с маленькими программами на Го, которые я сделал в процессе изучения языка на [Codecademy](https://www.codecademy.com/learn/learn-go) и решения задач из [журнала «Код»](https://thecode.media/zadacha/), а также из других источников (например, собеседований!)
+Это мой репозиторий с маленькими программами на Го, которые я сделал в процессе изучения языка. Задания взяты из различных мест:
+1. Курс [Codecademy по Golang](https://www.codecademy.com/learn/learn-go)
+2. Задачи из [журнала «Код»](https://thecode.media/zadacha/)
+3. Собеседования
+4. Задания в [Codewars](https://www.codewars.com/users/Shantaramka)
+5. [Tур по Go](https://go-tour-ru-ru.appspot.com/list)
+
+
+Мой опыт изучения языка:
+1. [Введение в программирование на Go](http://golang-book.ru/)
+2. [Tур по Go](https://go-tour-ru-ru.appspot.com/list)
+3. Курсы на [Codecademy](https://www.codecademy.com/profiles/shantaramka)
+4. Начал курс по разработке веб-сервисов на Go - основы языка на [Coursera](https://www.coursera.org/learn/golang-webservices-1)
+5. [Руководство по языку Go](https://metanit.com/go/tutorial/)
