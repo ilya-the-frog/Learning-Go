@@ -8,6 +8,7 @@
 4. Задания в [Codewars](https://www.codewars.com/users/Shantaramka)
 5. [Tур по Go](https://go-tour-ru-ru.appspot.com/list)
 
+
 Мой опыт изучения языка:
 1. [Введение в программирование на Go](http://golang-book.ru/)
 2. [Tур по Go](https://go-tour-ru-ru.appspot.com/list)
