@@ -18,27 +18,29 @@ func main() {
 	}
 	readFile.Close()
 
-	target, _ := strconv.Atoi(fileTextLines[0])   //получили исходное число
-	array := strings.Split(fileTextLines[1], " ") //превращем последовательность в слайс
-
-	//переделать слайс строк в слайс интов
+	var res int
 	var intArr []int
 
-	for i, _ := range array {
-		int, _ := strconv.Atoi(array[i])
-		intArr = append(intArr, int)
-	}
+	target, _ := strconv.Atoi(fileTextLines[0]) //получили исходное число
+	if len(fileTextLines) == 2 {
+		array := strings.Split(fileTextLines[1], " ") //превращем последовательность в слайс
 
-	var res int
+		for i, _ := range array {
+			intEntry, _ := strconv.Atoi(array[i])
+			intArr = append(intArr, intEntry)
+		}
 
-	for i, v := range intArr {
-		for n, value := range intArr {
-			if i != n && v+value == target {
-				res = 1
-			} else {
-				continue
+		for i, v := range intArr {
+			for n, value := range intArr {
+				if i != n && v+value == target {
+					res = 1
+				} else {
+					continue
+				}
 			}
 		}
+	} else {
+		res = 0
 	}
 
 	result := strconv.Itoa(res)
