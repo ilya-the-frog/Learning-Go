@@ -15,3 +15,6 @@
 3. Курсы на [Codecademy](https://www.codecademy.com/profiles/shantaramka)
 4. Начал курс по разработке веб-сервисов на Go - основы языка на [Coursera](https://www.coursera.org/learn/golang-webservices-1)
 5. [Руководство по языку Go](https://metanit.com/go/tutorial/)
+
+На одном только Go никуда не уедешь, поэтому паралельно я еще изучаю SQL. Отдельную репу решил не создавать, поэтому ссылки на гисты ключевых заданий с курсов:
+1. [Запросы по таблице с популяцией стран](https://gist.github.com/Shantaramka/bb301f9102c835625168f232dedf97ce)
